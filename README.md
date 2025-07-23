@@ -16,8 +16,8 @@
 
 1. **Clone the repository**
     ```bash
-    git clone https://WxWyashen@bitbucket.org/WxWyashen/qcp-binary-democases.git
-    cd qcp-binary-democases/
+    git clone https://github.com/yashen32768/ASE25-TOOL-QCP.git
+    cd ASE25-TOOL-QCP/
     ```
 2. **Configure Makefile in SeparationLogic folder and SeparationLogic/unifysl folder**
     Create a new file named CONFIGURE in folder SeparationLogic and folder SeparationLogic/unifysl, and the content is as follows:
