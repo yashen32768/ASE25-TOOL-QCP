@@ -6,6 +6,7 @@
 - `SeparationLogic/`: Rocq backend to check QCP-generated VCs
 - `tutorial/`: Step-by-step QCP usage guide
 - `RunningExample-linux.sh`, `RunningExample-windows.sh`: Scripts to run QCP examples
+- 
 
 ### Prerequisites
 
@@ -46,27 +47,27 @@ Usage: ./symexec [options]
 
 We provide the following execution options. Those marked with * are necessary.
 
-  * --input-file=<file>
+--input-file=<file>*
 specify the input C source code.
 
-  * --goal-file=<file>
-  * --proof-auto-file=<file>
-  * --proof-manual-file=<file-name>
+--goal-file=<file>*
+--proof-auto-file=<file>*
+--proof-manual-file=<file-name>*
 specify generated files. our tool will generate 3 Coq scripts: "goal-file" contains the VCs; "proof-auto-file" contains proofs of automatically solved VCs; "proof-manual-file" contains missing proofs of other VCs.
 
-  --gen-and-backup
+--gen-and-backup
 if generated files already exist, copy them to backup files before rewrite them; otherwise only "proof-manual" is copied.
 
-  --no-exec-info
+--no-exec-info
 ignore the intermediate information during symbolic execution.
 
-  --coq-logic-path=<path>
+--coq-logic-path=<path>
 specify the (Coq) logic path of "goal-file".
 
-  -slp <dir> <path>
+-slp <dir> <path>
 add directory which has the logic path to the list of strategy search paths.
 
-  -I<dir>
+-I<dir>
 add directory to the list of include search paths.
 
 If the source file contains preprocessing commands (#define, #include, etc.), please use "cpp -C <input-file> <output-file>" to preprocess it. Currently only "#include" is supported natively.
